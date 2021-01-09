@@ -1,0 +1,19 @@
+---
+users:
+  - name: ravi 
+    first: ravi
+    middle: raj
+    last: singh
+    uid: 1434
+
+  - name: nikhil
+    first: raj
+    middle: singh
+    last: singh
+    uid: 1454
+
+  - name: lord
+    first: singh
+    middle: raj
+    last: home
+    uid: 1564
