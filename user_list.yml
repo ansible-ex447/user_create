@@ -1,19 +1,13 @@
 ---
 users:
-  - name: ravi 
-    first: ravi
-    middle: raj
-    last: singh
+  - name: mangal
+    first: mangal
+    middle: singh
+    last: saini
     uid: 1434
 
   - name: nikhil
-    first: raj
-    middle: singh
-    last: singh
-    uid: 1454
-
-  - name: lord
-    first: singh
-    middle: raj
-    last: home
-    uid: 1564
+    first: nikhil
+    middle: kumar
+    last: jain
+    uid: 1435 
