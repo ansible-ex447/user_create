@@ -1,0 +1,13 @@
+---
+- name: Delete userfile
+  hosts: all
+  become: yes
+  gather_facts: no
+  vars_files:
+    - user_list.yml
+  tasks:
+    - name: Delete user 
+      user:
+        name: "{{ item.name }}"
+        state: absent
+      with_items: "{{ users }}"

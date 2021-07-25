@@ -1,12 +1,12 @@
 ---
 users:
-  - name: bjorn
-    first: bjorn
-    middle: singh
-    last: saini
+  - name: baba
+    first: baba
+    middle: kumar
+    last: jha
     uid: 1950
-  - name: tom
-    first: tom
-    middle: singh
-    last: saini
+  - name: subhan
+    first: subhan
+    middle: kumari
+    last: jha
     uid: 1951
