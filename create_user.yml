@@ -1,0 +1,4 @@
+---
+  - name: playbook for  user create
+    hosts: all
+    become: no
