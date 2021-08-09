@@ -1,4 +1,18 @@
 ---
  - name: playbook for  user create
    hosts: all
-   become: no
+   become: yes
+   vars_files:
+    - user_list.yml
+   vars:
+    password: "{{lookup('password', './{{ item.name }}-password length=10')}}"
+   tasks:
+     - name: user create
+       user:
+         name: "{{ item.name }}"
+         uid: "{{ item.uid }}"
+         state: present
+         comment: "{{ item.first|capitalize }} {{ item.middle|capitalize }} {{ item.last|capitalize }}"
+         password: "{{ password|password_hash('sha512')}}"
+         update_password: on_create
+       with_items: "{{ users }}"
